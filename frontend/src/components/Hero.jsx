@@ -55,10 +55,25 @@ export default function Hero() {
 
         {/* CTAs */}
         <div className="flex flex-wrap items-center justify-center gap-4 mt-10">
-          <a
-            href="#book"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-sky-500 hover:from-blue-500 hover:to-sky-400 text-white font-bold text-sm shadow-xl shadow-blue-500/25 transition-all duration-200 hover:-translate-y-0.5"
-          >
+          <a 
+  href="#" 
+  onClick={(e) => {
+    e.preventDefault();
+
+    const section = document.getElementById('book');
+
+    if (section) {
+      const y = section.getBoundingClientRect().top + window.scrollY - 120;
+
+      window.scrollTo({
+        top: y,
+        behavior: 'smooth',
+      });
+    }
+  }}
+  className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-sky-500 hover:from-blue-500 hover:to-sky-400 text-white font-bold text-sm shadow-xl shadow-blue-500/25 transition-all duration-200 hover:-translate-y-0.5" 
+>
+
             <Bike className="w-4 h-4" />
             <span>Calculate & Book</span>
           </a>

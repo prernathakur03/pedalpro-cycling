@@ -18,7 +18,7 @@ export default function Chatbot() {
     {
       id: 1,
       question: "What are your rental rates?",
-      answer: "Our rates start at ₹100/hr for Non-Gear cycles and ₹150/hr for Premium Gear cycles. Special 2-hour discount packages are also available!"
+      answer: "Our rates start at ₹250/hr for Non-Gear cycles and ₹300/hr for Premium Gear cycles. Special 2-hour discount packages are also available!"
     },
     {
       id: 2,

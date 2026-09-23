@@ -5,43 +5,43 @@ export default function Gallery() {
   const scrollRef = useRef(null);
 
   const images = [
-    {
-      id: 1,
-      src: '/src/img1.jpeg',
-      title: 'Worli Seaface Ride',
-      subtitle: 'Group cycling'
-    },
-    {
-      id: 2,
-      src: '/src/img4.jpeg',
-      title: 'Premium Gear Cycles',
-      subtitle: 'Sunset on Wheels'
-    },
-    {
-      id: 3,
-      src: '/src/img7.jpeg',
-      title: 'Park, Pause & Enjoy the View',
-      subtitle: 'Scenic coastal pitstop during early morning rides'
-    },
-    {
-      id: 4,
-      src: '/src/img2.jpeg',
-      title: 'Spotlight on Seaface',
-      subtitle: 'Celebrity guests making memories with our premium fleet'
-    },
-    {
-      id: 5,
-      src: '/src/img5.jpeg',
-      title: 'Ridden by the Stars',
-      subtitle: 'When icons choose PedalPro for their coastline leisure'
-    },
-    {
-      id: 6,
-      src: '/src/img3.jpeg',
-      title: 'Dignity in Motion',
-      subtitle: 'Distinguished IAS officers choosing eco-friendly travel along Worli Seaface'
-    }
-  ];
+  {
+    id: 1,
+    src: './src/img1.jpeg',
+    title: 'Worli Seaface Ride',
+    subtitle: 'Group cycling'
+  },
+  {
+    id: 2,
+    src: './src/img4.jpeg',
+    title: 'Premium Gear Cycles',
+    subtitle: 'Sunset on Wheels'
+  },
+  {
+    id: 3,
+    src: './src/img7.jpeg',
+    title: 'Park, Pause & Enjoy the View',
+    subtitle: 'Scenic coastal pitstop during early morning rides'
+  },
+  {
+    id: 4,
+    src: './src/img2.jpeg',
+    title: 'Spotlight on Seaface',
+    subtitle: 'Celebrity guests making memories with our premium fleet'
+  },
+  {
+    id: 5,
+    src: './src/img5.jpeg',
+    title: 'Ridden by the Stars',
+    subtitle: 'When icons choose PedalPro for their coastline leisure'
+  },
+  {
+    id: 6,
+    src: './src/img3.jpeg',
+    title: 'Dignity in Motion',
+    subtitle: 'Distinguished IAS officers choosing eco-friendly travel along Worli Seaface'
+  }
+];
 
   const scroll = (direction) => {
     if (scrollRef.current) {
